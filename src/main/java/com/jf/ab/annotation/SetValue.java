@@ -1,4 +1,4 @@
-package com.ab.annotation;
+package com.jf.ab.annotation;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

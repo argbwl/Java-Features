@@ -1,4 +1,4 @@
-package com.ab.mutithreading;
+package com.jf.ab.mutithreading;
 
 import lombok.Getter;
 import lombok.Setter;

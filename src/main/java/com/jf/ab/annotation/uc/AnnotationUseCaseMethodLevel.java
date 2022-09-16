@@ -1,7 +1,7 @@
-package com.ab.annotation.uc;
+package com.jf.ab.annotation.uc;
 
 
-import com.ab.annotation.SetValue;
+import com.jf.ab.annotation.SetValue;
 
 public class AnnotationUseCaseMethodLevel {
 

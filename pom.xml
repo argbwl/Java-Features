@@ -8,9 +8,10 @@
 		<version>2.7.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ab</groupId>
-	<artifactId>java-poc</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<groupId>com.jf.ab</groupId>
+	<artifactId>java-feature</artifactId>
+	<version>0.0.2-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>JavaFeatures</name>
 	<description>POC for Java Programs</description>
 	<properties>

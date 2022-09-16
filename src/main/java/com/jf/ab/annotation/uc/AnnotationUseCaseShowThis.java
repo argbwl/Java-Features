@@ -1,7 +1,7 @@
-package com.ab.annotation.uc;
+package com.jf.ab.annotation.uc;
 
-import com.ab.annotation.ShowThis;
-import com.ab.annotation.ShowThisStatus;
+import com.jf.ab.annotation.ShowThis;
+import com.jf.ab.annotation.ShowThisStatus;
 import lombok.Setter;
 
 import java.lang.reflect.Field;
@@ -9,10 +9,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@ShowThisStatus(showStatus = false)
+@ShowThisStatus(showStatus = true)
 public class AnnotationUseCaseShowThis {
 
-    private Field[] fields = AnnotationUseCaseShowThis.class.getDeclaredFields();
+    private final Field[] fields = AnnotationUseCaseShowThis.class.getDeclaredFields();
 
     @Setter
     @ShowThis
