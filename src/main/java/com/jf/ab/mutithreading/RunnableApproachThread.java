@@ -4,7 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 public class RunnableApproachThread implements Runnable {
-    private Thread thread;
+    private final Thread thread;
 
     @Setter @Getter
     private int count;
