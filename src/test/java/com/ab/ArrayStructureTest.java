@@ -1,6 +1,5 @@
 package com.ab;
 
-import com.jf.ab.JavaFeaturesApplication;
 import com.jf.dsa.ab.structure.ArrayStructure;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -9,9 +8,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.NullSource;
 import org.junit.jupiter.params.provider.ValueSource;
-import org.springframework.boot.test.context.SpringBootTest;
 
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Java-Features
@@ -20,7 +18,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
  **/
 
 @DisplayName("Test Cases for ArrayStructure")
-@SpringBootTest(classes = JavaFeaturesApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class ArrayStructureTest {
 
     ArrayStructure arrayStructure = null;

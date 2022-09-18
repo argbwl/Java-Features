@@ -5,8 +5,7 @@ import java.util.Arrays;
 public class ArrayStructure {
 
     public int[] createInt1DArrayWithSize(int size){
-        int arr[] = new int[size];
-        return arr;
+        return new int[size];
     }
 
     public String[] createString1DArrayWithSize(int size){

@@ -1,11 +1,9 @@
 package com.jf.dsa.ab.structure;
 
-import com.jf.ab.JavaFeaturesApplication;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.NullAndEmptySource;
 import org.junit.jupiter.params.provider.ValueSource;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -14,7 +12,6 @@ import static org.junit.jupiter.api.Assertions.*;
  * anuragbaranwal
  * 17/09/22
  **/
-@SpringBootTest(classes = JavaFeaturesApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @DisplayName("Test Cases for Bracket Matching")
 class MatchBracketsTest {
 
@@ -33,14 +30,14 @@ class MatchBracketsTest {
 
     @DisplayName("[Expected False] : Given Brackets are not in forms")
     @Test
-    void isBracketsMatching() {
+    void isBracketsMatchingTest() {
         String data = "[cec{((cece(cecec)ceec)cece}ce]";
         assertFalse(mb.isBracketsMatching(data));
     }
 
     @DisplayName("[Expected True] : Given Brackets are in correct forms")
     @Test
-    void isBracketsMatchingCase1() {
+    void isBracketsMatchingTestCase1() {
         String data = "[cec{(cece(cecec)ceec)cece}ce]";
         assertTrue(mb.isBracketsMatching(data));
     }
@@ -50,7 +47,6 @@ class MatchBracketsTest {
     @ValueSource(strings = {"[cec{(cece(cecec)ceec)cece}ce]","[]","[{()}]"})
     @NullAndEmptySource
     void isParamBracketsMatchingCase(String data) {
-        //String data = "[cec{(cece(cecec)ceec)cece}ce]";
         assertTrue(mb.isBracketsMatching(data));
     }
 
@@ -60,9 +56,7 @@ class MatchBracketsTest {
     }
 
     @AfterAll
-    static void afterAll(){
-
-    }
+    static void afterAll(){}
 
 
 
