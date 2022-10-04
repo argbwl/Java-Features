@@ -1,5 +1,7 @@
 package com.jf.ab.java8;
 
+import com.jf.printer.SystemPrinter;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,7 +15,7 @@ public class JobExecutorLambdaImpl {
 
     private static final String DEFAULT_FREQUENCY_EVERY_HOUR = "0 0 * * * *";
 
-    private Map<String, String> params = new HashMap<>();
+    private final Map<String, String> params = new HashMap<>();
 
     public void addDetailsIntoMap(String key, String value, boolean override){
         if(override)
@@ -38,7 +40,7 @@ public class JobExecutorLambdaImpl {
         JobExecutorLambdaImpl le = new JobExecutorLambdaImpl();
         le.addDetailsIntoMap("10S", "*/10 * * * * *", false);
         le.addDetailsIntoMap("01JAN", "0 0 0 01 01 ?", false);
-        System.out.println(le.executeJob("10s"));
+        SystemPrinter.info(le.executeJob("10s"));
     }
 
 }

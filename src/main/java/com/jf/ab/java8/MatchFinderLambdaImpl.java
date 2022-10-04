@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class MatchFinderLambdaImpl {
 
-    private static Map<String, MatchInterface> mapInterFaceMap = new HashMap<>();
+    private static final Map<String, MatchInterface> mapInterFaceMap = new HashMap<>();
 
     public MatchInterface findMatcherImpl(MatcherPO matcherPO) throws ClassNotFoundException {
         IMatchFinder finder = mPO ->{
