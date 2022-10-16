@@ -1,6 +1,7 @@
 # Java-Features
 
-To Execute all Test Cases and get report run below command
-mvn clean test site
+* To Execute all Test Cases and get report run below command<br>
 
-all consolidated test report will generate in site directory under target folder
+<pre>mvn clean test site</pre>
+
+* all consolidated test report will generate in site directory under target folder
