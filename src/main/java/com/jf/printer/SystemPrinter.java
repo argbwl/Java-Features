@@ -11,4 +11,8 @@ public class SystemPrinter {
         System.out.println(message);
     }
 
+    public static void error(Object message){
+        System.out.println(message);
+    }
+
 }

@@ -48,9 +48,15 @@ public class AnnotationUseCaseShowThis {
         showThisCase.setValue(1035);
         showThisCase.setContent("Sound");
 
+        AnnotationUseCaseShowThis showThisCase1 = new AnnotationUseCaseShowThis();
+        showThisCase1.setData("TV");
+        showThisCase1.setValue(37727);
+        showThisCase1.setContent("Music");
+
 
 
         showThisCase.showValue().forEach(System.out::println);
+        showThisCase1.showValue().forEach(System.out::println);
     }
 
 }
